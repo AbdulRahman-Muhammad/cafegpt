@@ -1,0 +1,6 @@
+fastapi
+uvicorn
+scrapy
+transformers
+torch
+pandas

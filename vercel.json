@@ -1,0 +1,19 @@
+{
+  "version": 2,
+  "builds": [
+    {
+      "src": "main.py",
+      "use": "@vercel/python"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/generate-response",
+      "methods": ["POST"],
+      "dest": "main.py"
+    }
+  ],
+  "env": {
+    "EXAMPLE_URL": "https://colle-pedia.blogspot.com"  // استبدل برابط الزحف الخاص بك إذا لزم الأمر
+  }
+}
